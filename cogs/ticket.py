@@ -93,3 +93,5 @@ async def setup(bot):
     bot.add_view(DeleteView())
     bot.add_view(CloseView())
     bot.add_view(CreateTicketView())
+async def setup(bot):
+    await bot.add_cog(Ticket(bot))
